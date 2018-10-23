@@ -45,7 +45,7 @@ node {
      }
    
       sh "sleep 3s"
-      sh "kubectl run --kubeconfig=/var/jenkins_home/kubeconfig --image=snyamars007/config-server:latest config-server  --port=8091"
+      sh "kubectl run --kubeconfig=/var/jenkins_home/kubeconfig --image=snyamars007/config-server:latest config-server  --port=9090"
       
       sh "kubectl --kubeconfig=/var/jenkins_home/kubeconfig expose deployment config-server"
      / **/
